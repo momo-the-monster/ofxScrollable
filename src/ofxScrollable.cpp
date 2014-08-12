@@ -146,6 +146,10 @@ bool ofxScrollable::released(ofPoint pos, int ID){
     return false;
 }
 
+void ofxScrollable::setDestinationPercent(float percent){
+	destination = -percent * (texHeight - height);
+}
+
 float ofxScrollable::getWidth(){
     return width;
 }

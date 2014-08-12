@@ -29,6 +29,8 @@ public:
     bool pressed(ofPoint pos, int ID=0);
     bool dragged(ofPoint pos, int ID=0);
     bool released(ofPoint pos, int ID=0);
+
+	void setDestinationPercent(float percent);
         
 private:
     float width,height;
